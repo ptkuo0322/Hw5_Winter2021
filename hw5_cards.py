@@ -28,7 +28,7 @@ class Card:
     '''
     suit_names = ["Diamonds","Clubs","Hearts","Spades"]
     faces = {1:"Ace",11:"Jack",12:"Queen",13:"King"}
- 
+
 
     def __init__(self, suit=0,rank=2):
         self.suit = suit
@@ -39,10 +39,9 @@ class Card:
             self.rank_name = Card.faces[self.rank]
         else:
             self.rank_name = str(self.rank)
- 
+
     def __str__(self):
         return f"{self.rank_name} of {self.suit_name}"
- 
 
 class Deck:
     '''a deck of Cards
